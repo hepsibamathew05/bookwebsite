@@ -1,0 +1,26 @@
+
+        h1 {text-align: center;}
+        h2 {text-align: left;}
+
+        .container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  max-width: 200%;
+  max-height:200%;
+}
+
+.text {
+  font-size: 15px;
+  padding-left: 120px;
+  text-align: left;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 4em;
+}
+

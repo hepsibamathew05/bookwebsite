@@ -1,0 +1,291 @@
+nav {
+    background-color: #3D1600;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+    
+  }
+  
+  ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    align-items: center;
+  }
+  
+  ul.menu li {
+    margin-right: 0; 
+    
+  }
+  ul.menu li.icon {
+    margin-right: 0; 
+    position: relative;
+  }
+  
+  ul.menu li.icon:hover .icon-text {
+    display: inline-block; /* Show the icon text on hover */
+  }
+  li {
+    margin-right: 25px; /* Add some spacing between menu items */
+    font-size: 27px; /* Increase the font size */
+}
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color:  #D3AC8B;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3D1600;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 3%;
+    border: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px) saturate(180%);
+  display:flex;
+  align-items: center;
+  border-radius: 60px;
+  }
+  .search-bar{
+  width:100%;
+  max-width:300px;
+  background:#3D1600;
+  display:flex;
+  align-items: center;
+  border-radius:60px;
+  padding:0px 20px;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 5%;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px) saturate(180%);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+}
+  ::placeholder{
+  color:#D3AC8B;
+  }
+  .search-bar button img{
+  width:30px;
+  }
+  .search-bar button{
+  border:0;
+  border-radius:70%;
+  width:30px;
+  height:30px;
+  background: #3D1600;
+  cursor: pointer;
+  }
+  .icon {
+    font-size: 60px; /* Increase the icon size */
+    margin-right: 0px; /* Add spacing between icons */
+}
+  .icon-text {
+    display: none; /* Hide the icon text by default */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #D3AC8B;
+    color: #6F4827;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 20px;
+  }
+  .icon a:hover {
+    background-color: transparent; /* Remove background box color on hover */
+}
+  
+  /*slide1*/
+  .carousel-container {
+    width: 300%;
+    max-width: 1800px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 60px;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.3s;
+  }
+  
+  .cover {
+    flex: 0 0 100%; /* Show one cover image at a time */
+  }
+  
+  .cover img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain image aspect ratio */
+    background: transparent;
+  }
+  
+  .carousel-prev-button, .carousel-next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: #3D1600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .carousel-prev-button {
+    left: 0;
+  }
+  
+  .carousel-next-button {
+    right: 0;
+  }
+  
+  .carousel-prev-button:hover, .carousel-next-button:hover {
+    background: #6F4827;
+  }
+  
+  /* Rest of your existing CSS for the slider */
+  
+  
+  /*slide2*/
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  h1 {
+    font-size: 50px;
+    text-align: left ;
+    padding-left: 40px;
+    color: #D3AC8B;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+    
+  
+  }
+  
+  .slider-container {
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  .slider {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .images {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s;
+  }
+  
+  .photo {
+    flex: 0 0 18%; /* Show 4 images at a time */
+    padding: 0 ;
+    height: 310px;
+    
+  }
+  
+  .photo img {
+    width: 70%;
+    height: 100%;
+  }
+
+  .photo-name {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%; /* Ensure the name spans the full width of the image container */
+    background-color: transparent;
+    text-align: center; /* Center the text within the container */
+    padding: 5px;
+    margin: 0;
+    color: #D3AC8B;
+}
+
+.photo-name.double-line {
+    white-space: pre-line;
+}
+
+.photo-description {
+    color: #D3AC8B; /* Change 'yourDescriptionColor' to the desired color */
+    font-size: 14px; /* Adjust the font size as needed */
+    text-align: center;
+    margin: 25px 0; /* Adjust the margin as needed */
+}
+  
+  .slider-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: #3D1600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .prev-button {
+    left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .next-button {
+    right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .prev-button:hover, .next-button:hover {
+    background: #6F4827;
+  }
+  
